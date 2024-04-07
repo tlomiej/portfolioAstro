@@ -16,8 +16,8 @@ if (Astro.request.method === "POST") {
     if (typeof password !== "string" || password.length < 6) {
       errors.password += "Password must be at least 6 characters. ";
     }
-    const hasErrors = Object.values(errors).some(msg => msg)
 
+    console.log(data);
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);
@@ -25,6 +25,7 @@ if (Astro.request.method === "POST") {
   }
 }
 ---
+
 <h1>Register</h1>
 <form method="POST">
   <label>
@@ -32,7 +33,7 @@ if (Astro.request.method === "POST") {
     <input type="text" name="username" />
   </label>
   {errors.username && <p>{errors.username}</p>}
-  <label>
+  <!-- <label>
     Email:
     <input type="email" name="email" required />
   </label>
@@ -41,6 +42,24 @@ if (Astro.request.method === "POST") {
     Password:
     <input type="password" name="password" required minlength="6" />
   </label>
-  {errors.password && <p>{errors.password}</p>}
-  <button>Register</button>
+  {errors.password && <p>{errors.password}</p>} -->
+  <button id="button">Register</button>
 </form>
+
+<script>
+  async function handleClick() {
+    console.log("button clicked!");
+
+	const data = await Astro.request.formData();
+
+	console.log(data)
+  }
+  document.getElementById("button")?.addEventListener("click", handleClick);
+</script>
+
+<style>
+  button {
+    background-color: green;
+    padding: 10px;
+  }
+</style>
