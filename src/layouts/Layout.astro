@@ -1,11 +1,18 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
 interface Props {
   title: string;
   descryption?: string;
   image?: string;
 }
 
-const { title, descryption= "sample descryption", image="/images/band.jpg" } = Astro.props;
+const {
+  title,
+  descryption = "sample descryption",
+  image = "/logoNode.svg",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -14,13 +21,15 @@ const { title, descryption= "sample descryption", image="/images/band.jpg" } = A
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-	<meta property="og:image" content={image}>
+    <meta property="og:image" content={image} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen grid grid-rows-[auto,1fr,auto]">
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
@@ -37,7 +46,7 @@ const { title, descryption= "sample descryption", image="/images/band.jpg" } = A
   }
   html {
     font-family: system-ui, sans-serif;
-    background: #13151a;
+    background: whitesmoke;
     background-size: 224px;
   }
   code {
@@ -51,4 +60,5 @@ const { title, descryption= "sample descryption", image="/images/band.jpg" } = A
       Courier New,
       monospace;
   }
+
 </style>
