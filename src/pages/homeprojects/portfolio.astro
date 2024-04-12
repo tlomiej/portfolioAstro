@@ -1,10 +1,16 @@
 ---
+import Sectionhead from "../../components/sectionhead.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 <Layout title="Portfolio">
 
+
+  <Sectionhead>
+    <Fragment slot="title">Portfolio</Fragment>
+    <Fragment slot="desc">My projects created in free time</Fragment>
+  </Sectionhead> 
   <main>
-      geosearch...
+      lista projektów (kafelki)
  
   </main>
 </Layout>
@@ -15,8 +21,8 @@ import Layout from "../../layouts/Layout.astro";
     padding: 1rem;
     width: 800px;
     max-width: calc(100% - 2rem);
-    color: white;
-    background-color: rgb(210, 45, 45);
+/*     color: white;
+    background-color: rgb(210, 45, 45); */
     font-size: 20px;
     line-height: 1.6;
   }

@@ -1,12 +1,14 @@
 ---
+import Sectionhead from "../../components/sectionhead.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
-<Layout title="Portfolio">
 
-  <main>
-      geosearch...
- 
-  </main>
+<Layout title="Portfolio">
+  <Sectionhead>
+    <Fragment slot="title">GeoSearch</Fragment>
+    <Fragment slot="desc">Aplication to find place in the world</Fragment>
+  </Sectionhead>
+  <main>geosearch...</main>
 </Layout>
 
 <style>
@@ -15,8 +17,8 @@ import Layout from "../../layouts/Layout.astro";
     padding: 1rem;
     width: 800px;
     max-width: calc(100% - 2rem);
-    color: white;
-    background-color: rgb(210, 45, 45);
+    /*     color: white;
+    background-color: rgb(210, 45, 45); */
     font-size: 20px;
     line-height: 1.6;
   }
