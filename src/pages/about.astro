@@ -2,6 +2,7 @@
 import Sectionhead from "../components/sectionhead.astro";
 import Layout from "../layouts/Layout.astro";
 import Container from "../components/container.astro";
+import LinksIcon from "../components/LinksIcon.astro"
 import { outerProfilLinks } from "../../config/config";
 import Icon from "astro-icon";
 ---
@@ -22,15 +23,8 @@ import Icon from "astro-icon";
         efficiently.
       </p>
 
-      <div class="flex flex-row gap-5 mx-auto mt-16">
-        {
-          outerProfilLinks.map((data) => (
-            <a title={data.name} href={data.url} target="_blank">
-              <Icon class="text-gray-400 w-24 h-24" name={data.icon} />
-            </a>
-          ))
-        }
-      </div>
+      <LinksIcon items={outerProfilLinks}></LinksIcon>
+
 
       <!--    <a href="https://github.com/tlomiej" title="Click to see my github">Github</a>
       <a href="https://www.linkedin.com/in/bart%C5%82omiej-staro%C5%84" title="Click to see my linkedin profile">Linkedin</a>
