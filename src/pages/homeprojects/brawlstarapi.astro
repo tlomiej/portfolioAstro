@@ -1,13 +1,20 @@
 ---
+import LinksIcon from "../../components/LinksIcon.astro";
 import Sectionhead from "../../components/sectionhead.astro";
 import Layout from "../../layouts/Layout.astro";
+import {projects} from "../../../config/config"
+
+const {tools} = projects[0]
 ---
 <Layout title="Portfolio">
   <Sectionhead>
     <Fragment slot="title">BrawlStar API</Fragment>
     <Fragment slot="desc">API to browse and connect BrawlStar data to your page</Fragment>
   </Sectionhead> 
+
+  <LinksIcon items={tools} name=""></LinksIcon>
   <main>
+
    
       brawlstarapi...
 
