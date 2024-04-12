@@ -1,9 +1,14 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import Sectionhead from "../components/sectionhead.astro";
 ---
 <Layout title="Portfolio">
 
+  <Sectionhead>
+    <Fragment slot="title">Hello</Fragment>
+    <Fragment slot="desc"></Fragment>
+  </Sectionhead> 
   <main>
     Portfolio cos tu trzebe dac Portfolio cos tu trzebe dac Portfolio cos tu
     trzebe dac Portfolio cos tu trzebe dac
@@ -25,7 +30,7 @@ import Layout from "../layouts/Layout.astro";
     width: 800px;
     max-width: calc(100% - 2rem);
     color: white;
-    background-color: rgb(210, 45, 45);
+    background-color: orange;
     font-size: 20px;
     line-height: 1.6;
   }
