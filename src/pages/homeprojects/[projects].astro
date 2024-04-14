@@ -1,0 +1,33 @@
+---
+import LinksIcon from "../../components/LinksIcon.astro";
+import Sectionhead from "../../components/sectionhead.astro";
+import Layout from "../../layouts/Layout.astro";
+import { projectsbyID } from "../../../config/config";
+
+type ProjectName = keyof typeof projectsbyID;
+const { projects } = Astro.params;
+const { tools, name, descryption } = projectsbyID[projects as ProjectName];
+
+export async function getStaticPaths() {
+  return [
+    { params: { projects: "brawlstarapi" } },
+    { params: { projects: "geosearch" } },
+    { params: { projects: "portfolio" } },
+  ];
+}
+---
+
+<Layout title="Portfolio">
+  <Sectionhead>
+    <Fragment slot="title">{projects}</Fragment>
+    <Fragment slot="desc"
+      >{descryption}</Fragment
+    >
+  </Sectionhead>
+
+  <LinksIcon items={tools} name={name} />
+  <main>
+    brawlstarapi... -lista kafalków technologi - opis - zrzuty ekranu aplikacji
+    - link do aplikacji
+  </main>
+</Layout>
