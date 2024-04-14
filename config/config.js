@@ -22,14 +22,14 @@ export const projects = [
   },
 ];
 
-const projectsbyID = {
+export const projectsbyID = {
   BrawlStarAPI: {
     name: "BrawlStarAPI",
     tools: [
       {
-        url: "https://www.linkedin.com/in/bart%C5%82omiej-staro%C5%84",
-        name: "Linkedin",
-        icon: "uil:linkedin",
+        url: "https://nodejs.org",
+        name: "node.js",
+        icon: "nodejs",
       },
       { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
     ],
