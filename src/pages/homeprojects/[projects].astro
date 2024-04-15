@@ -9,20 +9,16 @@ const { projects } = Astro.params;
 const { tools, name, descryption } = projectsbyID[projects as ProjectName];
 
 export async function getStaticPaths() {
-  return [
-    { params: { projects: "brawlstarapi" } },
-    { params: { projects: "geosearch" } },
-    { params: { projects: "portfolio" } },
-  ];
+  return Object.keys(projectsbyID).map((name) => {
+    return { params: { projects: name } };
+  });
 }
 ---
 
 <Layout title="Portfolio">
   <Sectionhead>
     <Fragment slot="title">{projects}</Fragment>
-    <Fragment slot="desc"
-      >{descryption}</Fragment
-    >
+    <Fragment slot="desc">{descryption}</Fragment>
   </Sectionhead>
 
   <LinksIcon items={tools} name={name} />
