@@ -3,7 +3,7 @@ import Icon from "astro-icon";
 
 const { items, name } = Astro.props;
 ---
-<div class="flex flex-row gap-5 mx-auto mt-16">
+<div class="flex flex-wrap justify-center gap-5 mx-auto mt-16">
   {
     items.map((data: { name: string; url: string; icon: string }) => (
       <a title={data.name} href={data.url} target="_blank">

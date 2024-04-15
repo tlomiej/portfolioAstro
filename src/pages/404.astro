@@ -1,10 +1,13 @@
 ---
+import { projects } from "../../config/config";
+import LinksIcon from "../components/LinksIcon.astro";
+import Sectionhead from "../components/sectionhead.astro";
 import Layout from "../layouts/Layout.astro";
 ---
-<Layout title="Portfolio">
 
-  <main>
-      404
- 
-  </main>
+<Layout title="Portfolio">
+  <Sectionhead>
+    <Fragment slot="title">404</Fragment>
+    <Fragment slot="desc">This page don't exist</Fragment>
+  </Sectionhead>
 </Layout>

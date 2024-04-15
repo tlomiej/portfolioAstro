@@ -3,28 +3,7 @@ import { Astronav, MenuIcon, MenuItems } from "astro-navbar";
 import { Image } from "astro:assets";
 import Container from "./container.astro";
 import Dropdown from "./dropdown.astro";
-
-const menuitems = [
-  {
-    title: "Home project",
-    path: "#",
-    children: [
-      { title: "BrawlStarAPI", path: "/homeprojects/brawlstarapi" },
-      { title: "GeoSeach", path: "/homeprojects/geosearch" },
-      { title: "Portfolio", path: "/homeprojects/portfolio" },
-      { title: "404 Page", path: "/404" },
-    ],
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-
-  {
-    title: "Contact",
-    path: "/contact",
-  },
-];
+import { menuItems } from "../../config/config";
 
 /* function getElem<T>( array: T[]){
     return array[0]
@@ -76,13 +55,13 @@ const bartek: string = 'test' */
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           {
-            menuitems.map((item, index) => (
+            menuItems.map((item, index: number) => (
               <>
                 {item.children && (
                   <Dropdown
                     title={item.title}
                     children={item.children}
-                    lastItem={index === menuitems.length - 1}
+                    lastItem={index === menuItems.length - 1}
                   />
                 )}
 

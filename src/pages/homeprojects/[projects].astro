@@ -3,10 +3,13 @@ import LinksIcon from "../../components/LinksIcon.astro";
 import Sectionhead from "../../components/sectionhead.astro";
 import Layout from "../../layouts/Layout.astro";
 import { projectsbyID } from "../../../config/config";
+import LinkDemo from "../../components/LinkDemo.astro";
+import Sectionbody from "../../components/sectionbody.astro";
 
 type ProjectName = keyof typeof projectsbyID;
 const { projects } = Astro.params;
-const { tools, name, descryption } = projectsbyID[projects as ProjectName];
+const { tools, name, descryption, link } =
+  projectsbyID[projects as ProjectName];
 
 export async function getStaticPaths() {
   return Object.keys(projectsbyID).map((name) => {
@@ -15,15 +18,15 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title="Portfolio">
+<Layout title={name}>
   <Sectionhead>
-    <Fragment slot="title">{projects}</Fragment>
+    <Fragment slot="title">{name}</Fragment>
     <Fragment slot="desc">{descryption}</Fragment>
   </Sectionhead>
+  <Sectionbody>
+    <LinkDemo slot="demo" href={link} />
+    <LinksIcon slot="links" items={tools} name={name} />
+  </Sectionbody>
 
-  <LinksIcon items={tools} name={name} />
-  <main>
-    brawlstarapi... -lista kafalków technologi - opis - zrzuty ekranu aplikacji
-    - link do aplikacji
-  </main>
+  <main></main>
 </Layout>

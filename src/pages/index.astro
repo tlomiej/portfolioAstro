@@ -2,28 +2,28 @@
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 import Sectionhead from "../components/sectionhead.astro";
-import LinkComponent from "../components/react/LinkComponent"
+import LinkComponent from "../components/react/LinkComponent";
 ---
-<Layout title="Portfolio">
 
+<Layout title="Portfolio">
   <Sectionhead>
     <Fragment slot="title">Hello</Fragment>
     <Fragment slot="desc"></Fragment>
-  </Sectionhead> 
+  </Sectionhead>
   <main>
-
     Portfolio cos tu trzebe dac Portfolio cos tu trzebe dac Portfolio cos tu
     trzebe dac Portfolio cos tu trzebe dac
 
-	<LinkComponent client:only="react" name="przekazana nazwa"></LinkComponent>
+    <LinkComponent client:only="react" name="przekazana nazwa" />
 
-
-	<Card title="GeoApp" body="test body" href="/homeprojects/brawlstarapi"></Card>
-	<Card title="BrawlStarApi" body="test body" href="/homeprojects/geosearch"></Card>
-	<Card title="test" body="test body" href="linkdoStrony"></Card>
-	<Card title="test" body="test body" href="linkdoStrony"></Card>
-   
- 
+    <Card title="GeoApp" body="test body" href="/homeprojects/brawlstarapi" />
+    <Card
+      title="BrawlStarApi"
+      body="test body"
+      href="/homeprojects/geosearch"
+    />
+    <Card title="test" body="test body" href="linkdoStrony" />
+    <Card title="test" body="test body" href="linkdoStrony" />
   </main>
 </Layout>
 
