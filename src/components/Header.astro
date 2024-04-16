@@ -12,14 +12,14 @@ const userEmail = Astro.cookies.get("userEmail");
     userEmail?.value ? (
       <a
         href="/logout"
-        class="bg-customColorFooter text-white py-3 px-6 rounded-xl text-xl"
+        class="bg-astroMainColor text-astroMainTextColor py-3 px-6 rounded-xl text-xl"
       >
         Logout
       </a>
     ) : (
       <a
         href="/login"
-        class="bg-customColorFooter text-white py-3 px-6 rounded-xl text-xl"
+        class="bg-astroMainColor text-astroMainTextColor py-3 px-6 rounded-xl text-xl"
       >
         Login
       </a>

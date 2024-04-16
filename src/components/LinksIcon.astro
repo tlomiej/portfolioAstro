@@ -7,7 +7,7 @@ const { items, name } = Astro.props;
   {
     items.map((data: { name: string; url: string; icon: string }) => (
       <a title={data.name} href={data.url} target="_blank">
-        <Icon class="text-gray-400 w-24 h-24" name={data.icon} />
+        <Icon class="text-astroLinkIconColor w-24 h-24" name={data.icon} />
       </a>
     ))
   }
