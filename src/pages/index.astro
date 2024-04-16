@@ -1,28 +1,42 @@
 ---
-import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 import Sectionhead from "../components/sectionhead.astro";
-import LinkComponent from "../components/react/LinkComponent";
+import Sectionbody from "../components/sectionbody.astro";
+import Cards from "../components/Cards.astro";
+import { outerProfilLinks } from "../../config/config";
+import LinksIcon from "../components/LinksIcon.astro";
 ---
 
 <Layout title="Portfolio">
   <Sectionhead>
-    <Fragment slot="title">Hello</Fragment>
-    <Fragment slot="desc"></Fragment>
+    <Fragment slot="title">Welcome to My Portfolio!</Fragment>
+    <Fragment slot="desc"
+      >Explore my projects, skills, and experiences in the world of programming.</Fragment
+    >
   </Sectionhead>
-
-  Portfolio cos tu trzebe dac Portfolio cos tu trzebe dac Portfolio cos tu
-  trzebe dac Portfolio cos tu trzebe dac
-
-  <LinkComponent client:only="react" name="przekazana nazwa" />
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <Card title="GeoApp" body="test body" href="/homeprojects/brawlstarapi" />
-    <Card
-      title="BrawlStarApi"
-      body="test body"
-      href="/homeprojects/geosearch"
-    />
-    <Card title="test" body="test body" href="linkdoStrony" />
-    <Card title="test" body="test body" href="linkdoStrony" />
-  </div>
+  <LinksIcon items={outerProfilLinks} />
+  <Sectionbody>
+    <Cards slot="links" />
+  </Sectionbody>
 </Layout>
+
+<style is:global>
+  :root {
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background: whitesmoke;
+    background-size: 224px;
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+</style>

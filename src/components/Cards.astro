@@ -1,0 +1,23 @@
+---
+import { projectsbyID } from "../../config/config";
+import Card from "./Card.astro";
+type ProjectName = keyof typeof projectsbyID;
+
+const items = Object.keys(projectsbyID);
+---
+
+<div slot="links" class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 max-w-xl mx-auto">
+  {
+    items.map((data) => {
+      const p = projectsbyID[data as ProjectName];
+
+      return (
+        <Card
+          title={p.name}
+          body={p.descryption.substring(0, 95) + "..."}
+          href="/homeprojects/brawlstarapi"
+        />
+      );
+    })
+  }
+</div>

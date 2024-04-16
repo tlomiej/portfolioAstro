@@ -9,6 +9,7 @@ export default {
         astroMainTextColor: "white",
         astroLinkIconColor: "#827191", // gray-400
         astroDemoLinkColor: "#7D1D3F",
+		astroBackground: 'smokewhite'
       },
       keyframes: {
         wave: {
