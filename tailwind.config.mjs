@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         astroMainColor: "#827191",
+        astroSecondColor: "#625973",
         astroMainTextColor: "white",
         astroLinkIconColor: "#827191", // gray-400
         astroDemoLinkColor: "#7D1D3F",
@@ -22,6 +23,7 @@ export default {
         },
       },
       animation: {
+
         "waving-demo": "wave 1s linear",
       },
     },

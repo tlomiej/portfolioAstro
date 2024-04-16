@@ -3,7 +3,6 @@ import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 import Sectionhead from "../components/sectionhead.astro";
 import LinkComponent from "../components/react/LinkComponent";
-
 ---
 
 <Layout title="Portfolio">
@@ -11,12 +10,12 @@ import LinkComponent from "../components/react/LinkComponent";
     <Fragment slot="title">Hello</Fragment>
     <Fragment slot="desc"></Fragment>
   </Sectionhead>
-  <main>
-    Portfolio cos tu trzebe dac Portfolio cos tu trzebe dac Portfolio cos tu
-    trzebe dac Portfolio cos tu trzebe dac
 
-    <LinkComponent client:only="react" name="przekazana nazwa" />
+  Portfolio cos tu trzebe dac Portfolio cos tu trzebe dac Portfolio cos tu
+  trzebe dac Portfolio cos tu trzebe dac
 
+  <LinkComponent client:only="react" name="przekazana nazwa" />
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <Card title="GeoApp" body="test body" href="/homeprojects/brawlstarapi" />
     <Card
       title="BrawlStarApi"
@@ -25,21 +24,5 @@ import LinkComponent from "../components/react/LinkComponent";
     />
     <Card title="test" body="test body" href="linkdoStrony" />
     <Card title="test" body="test body" href="linkdoStrony" />
-  </main>
+  </div>
 </Layout>
-
-<style>
-  :root {
-    --astro-main-color: red;
-  }
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    background-color: orange;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-</style>
