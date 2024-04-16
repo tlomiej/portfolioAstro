@@ -2,33 +2,24 @@
 const { href } = Astro.props;
 ---
 
-{href != undefined && <a href={href}>See live aplication</a>}
+{
+  href != undefined && (
+    <a
+      href={href}
+      class="bg-astroDemoLinkColor text-astroMainTextColor py-3 px-6 rounded-xl text-xl"
+    >
+      See live aplication
+    </a>
+  )
+}
 
 <style>
-  a {
-    border-width: 7px;
-    width: 150px;
-    padding: 1em;
-    border-radius: 4px;
-    background-color: #fff;
-    color: ;
-    transition: background-color .5s, color .5s;
-  }
 
 
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+ 
 
-}
 
-@keyframes shake {
-    0% { transform: translateX(0); } /* Początkowa pozycja */
-    100% { transform: translateX(10px); } /* Końcowa pozycja (drganie w prawo) */
-}
-
-  a:link {
+/*   a:link {
     color: red;
   }
 
@@ -40,8 +31,8 @@ const { href } = Astro.props;
     color: blue;
   }
 
-  /* selected link */
+
   a:active {
     color: blue;
-  }
+  } */
 </style>

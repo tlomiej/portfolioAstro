@@ -6,7 +6,6 @@ export const menuItems = [
       { title: "BrawlStarAPI", path: "/homeprojects/brawlstarapi" },
       { title: "GeoSeach", path: "/homeprojects/geosearch" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
-      { title: "404 Page", path: "/404" },
     ],
   },
   {
@@ -27,7 +26,6 @@ export const outerProfilLinks = [
     icon: "uil:linkedin",
   },
   { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
-  /*   {url: 'https://github.com/tlomiej', name: "Github", icon:"mongodb"} */
 ];
 
 export const projects = [

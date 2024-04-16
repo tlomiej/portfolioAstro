@@ -6,7 +6,8 @@ export default {
       colors: {
         astroMainColor: "#827191",
         astroMainTextColor: "white",
-		astroLinkIconColor: '#7D1D3F'// gray-400
+		astroLinkIconColor: '#827191',// gray-400
+		astroDemoLinkColor: "#7D1D3F"
       },
     },
   },
