@@ -2,37 +2,10 @@
 const { href } = Astro.props;
 ---
 
-{
-  href != undefined && (
-    <a
-      href={href}
-      class="bg-astroDemoLinkColor text-astroMainTextColor py-3 px-6 rounded-xl text-xl"
-    >
-      See live aplication
-    </a>
-  )
-}
-
-<style>
-
-
- 
-
-
-/*   a:link {
-    color: red;
-  }
-
-  a:visited {
-    color: green;
-  }
-
-  a:hover {
-    color: blue;
-  }
-
-
-  a:active {
-    color: blue;
-  } */
-</style>
+<div>
+  <a
+    title="See live application"
+    class="bg-astroDemoLinkColor text-astroMainTextColor py-3 px-6 rounded-xl text-xl w-32"
+    href={href}>See live demo</a
+  >
+</div>
