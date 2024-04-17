@@ -1,28 +1,9 @@
 ---
 import MenuNavBar from "./MenuNavBar.astro";
-
-const userEmail = Astro.cookies.get("userEmail");
 ---
 
 <header
   class="flex justify-between items-center px-12 max-sm:px-5 max-sm:py-1 max-w-7xl justify-self-center w-full"
 >
   <MenuNavBar />
-  {
-    userEmail?.value ? (
-      <a
-        href="/logout"
-        class="bg-astroMainColor text-astroMainTextColor py-3 px-6 rounded-xl text-xl"
-      >
-        Logout
-      </a>
-    ) : (
-      <a
-        href="/login"
-        class="bg-astroMainColor text-astroMainTextColor py-3 px-6 rounded-xl text-xl"
-      >
-        Login
-      </a>
-    )
-  }
 </header>
