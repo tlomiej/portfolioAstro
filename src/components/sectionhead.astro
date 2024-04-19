@@ -3,10 +3,22 @@ const { align = "center" } = Astro.props;
 ---
 
 <div class:list={["mt-4", align === "center" && "text-center"]}>
-  <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    <slot name="title">Title</slot>
+  <h1
+    id="sectionHeadFirst"
+    class="text-4xl lg:text-5xl font-bold lg:tracking-tight"
+  >
+    <slot :class="{'text-red': true}" name="title">Title</slot>
   </h1>
-  <p class="text-lg mt-4 text-astroSecondTextColor">
-    <slot name="desc">Some description goes here</slot>
+  <p id="sectionHeadSecond" class="text-lg mt-4">
+    <slot name="desc" class="text-red">Some description goes here</slot>
   </p>
 </div>
+
+<style is:global>
+  #sectionHeadFirst {
+    @apply text-astroMainDarkTextColor;
+  }
+  #sectionHeadSecond {
+    @apply text-astroSecondTextColor;
+  }
+</style>
