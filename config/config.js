@@ -46,8 +46,9 @@ export const projects = [
 export const projectsbyID = {
   brawlstarapi: {
     name: "BrawlStarAPI",
-    descryption: "BrawlStarAPI",
-    href:"/homeprojects/brawlstarapi",
+    descryption:
+      "Brawl Stars is a popular mobile game with millions of users around the world. The application is built upon the public Brawl Stars API, which provides convenient access to browse data and retrieve it in JSON format. With this API, users can effortlessly explore various game-related information and retrieve it in a structured JSON format for further processing or integration with other systems.",
+    href: "/homeprojects/brawlstarapi",
     link: "https://learn-nodejs-r8oc.onrender.com",
     tools: [
       {
@@ -76,8 +77,9 @@ export const projectsbyID = {
   geosearch: {
     name: "GeoSearch",
     link: "https://geoapp-8zbw.onrender.com",
-    href:"/homeprojects/geosearch",
-    descryption: "This product facilitates searching for locations based on their name and space. Users can apply specific filters to refine their search results. It automatically logs the search history, allowing users to revisit previous searches.Its interface is designed to be intuitive, providing users with a seamless experience.",
+    href: "/homeprojects/geosearch",
+    descryption:
+      "This product facilitates searching for locations based on their name and space. Users can apply specific filters to refine their search results. It automatically logs the search history, allowing users to revisit previous searches.Its interface is designed to be intuitive, providing users with a seamless experience.",
     tools: [
       {
         url: "",
