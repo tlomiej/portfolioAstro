@@ -5,28 +5,33 @@ import Sectionhead from "../components/sectionhead.astro";
 import { Icon } from "astro-icon";
 
 import Layout from "../layouts/Layout.astro";
+import { contactMe } from "../../config/config.js";
 ---
 
 <Layout title="Contact">
   <Container>
     <Sectionhead>
       <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
+      <Fragment slot="desc">We are here to help.</Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact with me</h2>
-        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+        <h2 class="font-medium text-2xl text-astroMainDarkTextColor">
+          Contact with me
+        </h2>
+        <p class="text-lg leading-relaxed text-astroSecondColor mt-3">
           Have something to say? I am here to help.
         </p>
         <div class="mt-5">
-          <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>Lublin</span>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:bartekstaron@gmail.com">bartekstaron@gmail.com</a
+          <div class="flex items-center mt-2 space-x-2 text-astroSecondColor">
+            <Icon class="text-astroMainColor w-6 h-6" name="uil:map-marker" />
+            <span>{contactMe.place}</span>
+          </div><div
+            class="flex items-center mt-2 space-x-2 text-astroSecondColor"
+          >
+            <Icon class="text-astroMainColor w-6 h-6" name="uil:envelope" /><a
+              href={"mailto:" + contactMe.mail}>{contactMe.mail}</a
             >
           </div>
         </div>

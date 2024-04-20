@@ -1,5 +1,6 @@
 ---
 import Button from "../components/ui/button.astro";
+import { contactMe } from "../../config/config.js";
 ---
 
 <!-- To make this contact form work, create your free access key from https://web3forms.com/
@@ -14,7 +15,7 @@ import Button from "../components/ui/button.astro";
   <input
     type="hidden"
     name="access_key"
-    value="ce090992-67c7-4408-a249-f293bfd6deb5"
+    value={contactMe.MAIL_API_KEY}
   />
   <!-- Create your free access key from https://web3forms.com/ -->
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />

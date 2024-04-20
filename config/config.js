@@ -28,20 +28,18 @@ export const outerProfilLinks = [
   { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
 ];
 
-export const projects = [
-  {
-    name: "BrawlStarAPI",
+export const footerText = "Copyright 2024. StarOn";
+export const aboutMe = {
+  title: "Developer",
+  descryption:
+    " Developer skilled in frontend and backend development, specializing in Geographic Information Systems. Creates user-friendly interfaces and robust backend systems to analyze and visualize spatial data efficiently.",
+};
 
-    tools: [
-      {
-        url: "https://www.linkedin.com/in/bart%C5%82omiej-staro%C5%84",
-        name: "Linkedin",
-        icon: "uil:linkedin",
-      },
-      { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
-    ],
-  },
-];
+export const contactMe = {
+  mail: "bartekstaron@gmail.com",
+  place: "Lublin (51°15′00″N' 22°34′00″E)",
+  MAIL_API_KEY: "ce090992-67c7-4408-a249-f293bfd6deb5",
+};
 
 export const projectsbyID = {
   brawlstarapi: {
