@@ -10,12 +10,11 @@ const items = Object.keys(projectsbyID);
   {
     items.map((data) => {
       const p = projectsbyID[data as ProjectName];
-
       return (
         <Card
           title={p.name}
           body={p.descryption.substring(0, 95) + "..."}
-          href="/homeprojects/brawlstarapi"
+          href={p.href}
         />
       );
     })

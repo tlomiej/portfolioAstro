@@ -31,6 +31,7 @@ export const outerProfilLinks = [
 export const projects = [
   {
     name: "BrawlStarAPI",
+
     tools: [
       {
         url: "https://www.linkedin.com/in/bart%C5%82omiej-staro%C5%84",
@@ -46,6 +47,7 @@ export const projectsbyID = {
   brawlstarapi: {
     name: "BrawlStarAPI",
     descryption: "BrawlStarAPI",
+    href:"/homeprojects/brawlstarapi",
     link: "https://learn-nodejs-r8oc.onrender.com",
     tools: [
       {
@@ -74,7 +76,8 @@ export const projectsbyID = {
   geosearch: {
     name: "GeoSearch",
     link: "https://geoapp-8zbw.onrender.com",
-    descryption: "GeoSearch - looking for addres",
+    href:"/homeprojects/geosearch",
+    descryption: "This product facilitates searching for locations based on their name and space. Users can apply specific filters to refine their search results. It automatically logs the search history, allowing users to revisit previous searches.Its interface is designed to be intuitive, providing users with a seamless experience.",
     tools: [
       {
         url: "",
