@@ -41,6 +41,55 @@ export const contactMe = {
   MAIL_API_KEY: "ce090992-67c7-4408-a249-f293bfd6deb5",
 };
 
+export const tools = [
+  {
+    url: "",
+    name: "JavaScript",
+    icon: "javascript",
+  },
+  {
+    url: "",
+    name: "TypeScript",
+    icon: "typescript",
+  },
+  {
+    url: "",
+    name: "Python",
+    icon: "python",
+  },
+  {
+    url: "",
+    name: "SQL",
+    icon: "sql",
+  },
+  {
+    url: "https://vuejs.org",
+    name: "Vue",
+    icon: "vue",
+  },
+  {
+    url: "https://nodejs.org",
+    name: "node.js",
+    icon: "nodejs",
+  },
+  {
+    url: "https://expressjs.com",
+    name: "express.js",
+    icon: "express",
+  },
+  {
+    url: "https://ejs.co/",
+    name: "EJS",
+    icon: "ejs",
+  },
+  {
+    url: "https://www.mongodb.com",
+    name: "mongoDB",
+    icon: "mongodb",
+  },
+  { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
+]
+
 export const projectsbyID = {
   brawlstarapi: {
     name: "BrawlStarAPI",

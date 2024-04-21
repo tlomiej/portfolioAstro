@@ -3,7 +3,7 @@ import Sectionhead from "../components/sectionhead.astro";
 import Layout from "../layouts/Layout.astro";
 import Container from "../components/container.astro";
 import LinksIcon from "../components/LinksIcon.astro";
-import { outerProfilLinks, aboutMe } from "../../config/config";
+import { outerProfilLinks, aboutMe, tools } from "../../config/config";
 ---
 
 <Layout title="Portfolio">
@@ -20,6 +20,8 @@ import { outerProfilLinks, aboutMe } from "../../config/config";
       </p>
 
       <LinksIcon items={outerProfilLinks} />
+      <h1>My toolset</h1>
+      <LinksIcon items={tools} />
     </div>
   </Container>
 </Layout>
