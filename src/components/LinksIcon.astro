@@ -4,11 +4,11 @@ import Icon from "astro-icon";
 const { items } = Astro.props;
 ---
 
-<div class="flex flex-wrap justify-center gap-5 mx-auto mt-16">
+<div class="flex flex-wrap justify-center gap-5 mx-auto mt-16 dark:bg-astroDarkBackground">
   {
     items.map((data: { name: string; url: string; icon: string }) => (
       <a title={data.name} href={data.url} target="_blank">
-        <Icon class="text-astroLinkIconColor w-24 h-24" name={data.icon} />
+        <Icon class="text-astroLinkIconColor w-24 h-24 dark:text-astroDarkLinkIconColor" name={data.icon} />
       </a>
     ))
   }

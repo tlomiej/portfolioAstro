@@ -17,8 +17,8 @@ export default {
         astroDarkMainColor: "white",
         astroDarkSecondColor: "#625973",
         astroDarkMainTextColor: "white",
-        astroDarkLinkIconColor: "#827191", // gray-400
-        astroDarkDemoLinkColor: "#7D1D3F",
+        astroDarkLinkIconColor: "white", // gray-400
+        astroDarkDemoLinkColor: "white",
         astroDarkSecondTextColor: "white",
         astroDarkMainDarkTextColor: "white",
         astroDarkBackground: "black",

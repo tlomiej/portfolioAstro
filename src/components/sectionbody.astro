@@ -3,19 +3,19 @@ const { align = "center" } = Astro.props;
 ---
 
 <div class:list={["mt-4", align === "center" && "text-center"]}>
-  <p id="sectionHeadFirst" class="text-lg mt-4 text-astroSecondTextColor">
+  <p id="sectionBodyFirst" class="text-lg mt-4">
     <slot name="demo" />
   </p>
-  <p id="sectionHeadSecond" class="text-lg mt-4 text-astroSecondTextColor">
+  <p id="sectionBodySecond" class="text-lg mt-4">
     <slot name="links" />
   </p>
 </div>
 
 <style is:global>
-  #sectionHeadFirst {
+  #sectionBodyFirst {
     @apply text-astroMainDarkTextColor dark:text-astroDarkMainDarkTextColor dark:bg-astroDarkBackground;
   }
-  #sectionHeadSecond {
+  #sectionBodySecond {
     @apply text-astroSecondTextColor dark:text-astroDarkSecondTextColor dark:bg-astroDarkBackground;
   }
 </style>
