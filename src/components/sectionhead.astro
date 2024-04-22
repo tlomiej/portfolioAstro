@@ -16,9 +16,11 @@ const { align = "center" } = Astro.props;
 
 <style is:global>
   #sectionHeadFirst {
-    @apply text-astroMainDarkTextColor;
+    @apply text-astroMainDarkTextColor dark:text-astroDarkMainDarkTextColor dark:bg-astroDarkBackground;
   }
   #sectionHeadSecond {
-    @apply text-astroSecondTextColor;
+    @apply text-astroSecondTextColor dark:text-astroDarkSecondTextColor dark:bg-astroDarkBackground;
   }
+
+
 </style>

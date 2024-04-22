@@ -20,7 +20,7 @@ import { menuItems } from "../../config/config";
           />
         </a>
         <div class="block lg:hidden">
-          <MenuIcon class="w-12 h-12 text-astroMainColor" />
+          <MenuIcon class="w-12 h-12 text-astroMainColor dark:text-astroDarkMainColor" />
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
@@ -40,7 +40,8 @@ import { menuItems } from "../../config/config";
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 items-center text-astroMainDarkTextColor hover:text-astroSecondTextColor"
+                      class="flex lg:px-3 py-2 items-center text-astroMainDarkTextColor hover:text-astroSecondTextColor
+                      dark:text-astroDarkMainColor"
                     >
                       <span> {item.title}</span>
                     </a>

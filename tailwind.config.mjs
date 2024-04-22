@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -11,7 +12,16 @@ export default {
         astroDemoLinkColor: "#7D1D3F",
         astroSecondTextColor: "#475569",
         astroMainDarkTextColor: "#1e293b",
-		astroBackground: 'smokewhite'
+        astroBackground: "smokewhite",
+
+        astroDarkMainColor: "white",
+        astroDarkSecondColor: "#625973",
+        astroDarkMainTextColor: "white",
+        astroDarkLinkIconColor: "#827191", // gray-400
+        astroDarkDemoLinkColor: "#7D1D3F",
+        astroDarkSecondTextColor: "white",
+        astroDarkMainDarkTextColor: "white",
+        astroDarkBackground: "black",
       },
       keyframes: {
         wave: {
@@ -26,7 +36,6 @@ export default {
         },
       },
       animation: {
-
         "waving-demo": "wave 1s linear",
       },
     },
