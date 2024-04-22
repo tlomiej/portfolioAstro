@@ -7,6 +7,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [
     tailwind(),
+    react(),
     AstroPWA({
       mode: "development",
       base: "/",
@@ -48,6 +49,5 @@ export default defineConfig({
         directoryAndTrailingSlashHandler: true,
       },
     }),
-    react(),
   ],
 });

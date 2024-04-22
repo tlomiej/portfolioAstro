@@ -1,6 +1,6 @@
-import { useState, type JSXElementConstructor, type ReactElement, type ReactNode, type ReactPortal } from "react";
+import { useState } from "react";
 
-export default function Welcome(props: { name?: string }) {
+export default function LinkComponent(props: { name?: string }) {
   const [count, setCount] = useState(0);
 
   return (
@@ -10,7 +10,10 @@ export default function Welcome(props: { name?: string }) {
       }}
     >
       Hello z react Compoennt, {count}
-      {props.name}
+      <h1>{props.name}</h1>
+
     </h1>
   );
 }
+
+
