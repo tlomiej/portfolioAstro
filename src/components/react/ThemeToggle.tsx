@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const initialTheme =
-    typeof window !== "undefined"
-      ? localStorage.getItem("theme") ?? "light"
-      : "light";
-
-  // Use the initialTheme as the initial state
-  const [theme, setTheme] = useState(initialTheme);
+  const [theme, setTheme] = useState(() => {
+    const initialTheme =
+      typeof window !== "undefined"
+        ? localStorage.getItem("theme") ?? "light"
+        : "light";
+    return initialTheme;
+  });
 
   const handleClick = () => {
     setTheme(theme === "light" ? "dark" : "light");
