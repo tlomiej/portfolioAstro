@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import Container from "./container.astro";
 import Dropdown from "./dropdown.astro";
 import { menuItems } from "../../config/config";
+import Icon from "astro-icon";
 ---
 
 <Container>
@@ -11,16 +12,15 @@ import { menuItems } from "../../config/config";
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-start">
         <a href="/" class="text-lg">
-          <Image
-            src="/logoNode.svg"
-            alt="Logo"
-            width={48}
-            height={48}
-            class="w-32"
+          <Icon
+            class="text-astroLinkIconColor w-24 h-24 dark:text-astroDarkLinkIconColor"
+            name="hex"
           />
         </a>
         <div class="block lg:hidden">
-          <MenuIcon class="w-12 h-12 text-astroMainColor dark:text-astroDarkMainColor" />
+          <MenuIcon
+            class="w-12 h-12 text-astroMainColor dark:text-astroDarkMainColor"
+          />
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
