@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        astroMainColor: "#4D8B31",
-        astroLinkIconColor: "#4D8B31", // gray-400
+        astroMainColor: "#1E212B",
+        astroLinkIconColor: "#1E212B", // gray-400
         astroSecondColor: "#FFC800",
         astroMainTextColor: "white",
         astroDemoLinkColor: "#FF8427",
