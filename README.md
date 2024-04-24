@@ -1,5 +1,5 @@
 # Template portfolio: Basics
-
+[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 <div align="center">
   <a align="center" href="https://tlomiejastro.onrender.com/" title="Click to see portfolio" target="_blank" rel="noreferrer">
      <img width="80%" src="https://github.com/tlomiej/learnAstro/blob/master/portfolio_ligthouse.jpg" />
