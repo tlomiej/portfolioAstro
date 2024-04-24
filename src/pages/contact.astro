@@ -20,15 +20,15 @@ import { contactMe } from "../../config/config.js";
         <h2 class="font-medium text-2xl text-astroMainDarkTextColor dark:text-astroDarkMainColor">
           Contact with me
         </h2>
-        <p class="text-lg leading-relaxed text-astroSecondColor mt-3 dark:text-astroDarkMainColor">
+        <p class="text-lg leading-relaxed text-astroMainDarkTextColor mt-3 dark:text-astroDarkMainColor">
           Have something to say? I am here to help.
         </p>
         <div class="mt-5">
-          <div class="flex items-center mt-2 space-x-2 text-astroSecondColor dark:text-astroDarkMainColor">
+          <div class="flex items-center mt-2 space-x-2 text-astroMainDarkTextColor dark:text-astroDarkMainColor">
             <Icon class="text-astroMainColor w-6 h-6 dark:text-astroDarkMainColor" name="uil:map-marker" />
             <span>{contactMe.place}</span>
           </div><div
-            class="flex items-center mt-2 space-x-2 text-astroSecondColor dark:text-astroDarkMainColor"
+            class="flex items-center mt-2 space-x-2 text-astroMainDarkTextColor dark:text-astroDarkMainColor"
           >
             <Icon class="text-astroMainColor w-6 h-6 dark:text-astroDarkMainColor" name="uil:envelope" /><a
               href={"mailto:" + contactMe.mail}>{contactMe.mail}</a
