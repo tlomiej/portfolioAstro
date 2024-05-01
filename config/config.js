@@ -6,6 +6,7 @@ export const menuItems = [
       { title: "BrawlStarAPI", path: "/homeprojects/brawlstarapi" },
       { title: "GeoSeach", path: "/homeprojects/geosearch" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
+      { title: "Google Cloud Platform", path: "/homeprojects/gcp" },
     ],
   },
   {
@@ -144,6 +145,20 @@ export const projectsbyID = {
         icon: "vue",
       },
       { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
+    ],
+  },
+  gcp: {
+    name: "Google Cloud Platform research",
+    link: "",
+    href: "/homeprojects/gpc",
+    descryption:
+      "Intro to GCP",
+    tools: [
+      {
+        url: "",
+        name: "SQL",
+        icon: "sql",
+      }
     ],
   },
 };
