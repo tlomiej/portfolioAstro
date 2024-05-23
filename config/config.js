@@ -161,7 +161,7 @@ export const projectsbyID = {
       }
     ],
   },
-  gcp: {
+  collector: {
     name: "Collector",
     link: "https://collect.pythonanywhere.com",
     href: "/homeprojects/collector",
