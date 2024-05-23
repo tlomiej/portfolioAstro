@@ -161,4 +161,23 @@ export const projectsbyID = {
       }
     ],
   },
+  gcp: {
+    name: "Collector",
+    link: "",
+    href: "/homeprojects/collector",
+    descryption:
+      "Initial version of collector build in Flask",
+    tools: [
+      {
+          url: "",
+          name: "Python",
+          icon: "python",
+        },
+        {
+          url: "",
+          name: "Flask",
+          icon: "flask",
+        },
+    ],
+  },
 };
