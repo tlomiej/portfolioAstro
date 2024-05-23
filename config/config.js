@@ -163,7 +163,7 @@ export const projectsbyID = {
   },
   gcp: {
     name: "Collector",
-    link: "",
+    link: "https://collect.pythonanywhere.com",
     href: "/homeprojects/collector",
     descryption:
       "Initial version of collector build in Flask",
