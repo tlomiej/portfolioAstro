@@ -7,6 +7,7 @@ export const menuItems = [
       { title: "GeoSeach", path: "/homeprojects/geosearch" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
       { title: "Google Cloud Platform", path: "/homeprojects/gcp" },
+        { title: "Collector", path: "/homeprojects/collector" },
     ],
   },
   {
