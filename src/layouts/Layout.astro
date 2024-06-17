@@ -3,6 +3,7 @@ import { ViewTransitions } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { SEO } from "astro-seo";
+import {SEOconfig} from "../../config/config"
 
 interface Props {
   title: string;
@@ -20,9 +21,8 @@ const {
 <!doctype html>
 <html lang="en">
   <head>
-    <SEO title="Portfolio" description="Programmer portfolio" />
+    <SEO title={SEOconfig.title} description={SEOconfig.decryption} />
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <meta property="og:image" content={image} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
