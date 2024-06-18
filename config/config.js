@@ -12,7 +12,8 @@ export const menuItems = [
       { title: "GeoSeach", path: "/homeprojects/geosearch" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
       { title: "Google Cloud Platform", path: "/homeprojects/gcp" },
-        { title: "Collector", path: "/homeprojects/collector" },
+      { title: "Collector", path: "/homeprojects/collector" },
+      { title: "Data visualization - Streamlit", path: "/homeprojects/streamlit" },
     ],
   },
   {
@@ -181,7 +182,7 @@ export const projectsbyID = {
   gcp: {
     name: "Google Cloud Platform research",
     link: "",
-    href: "/homeprojects/gpc",
+    href: "homeprojects/gcp",
     descryption:
       "Intro to GCP",
     tools: [
@@ -189,6 +190,20 @@ export const projectsbyID = {
         url: "",
         name: "SQL",
         icon: "sql",
+      }
+    ],
+  },
+  portfolio: {
+    name: "portfolio",
+    link: "https://github.com/tlomiej/portfolioAstro",
+    href: "homeprojects/portfolio",
+    descryption:
+      "Template portfolio with config and tailwind configuration. Simple configuration. In the config.js file, you configure the content of the page: information about yourself, project descriptions, technologies. In the tailwind.config.mjs file, you define your colors.",
+    tools: [
+      {
+        url: "",
+        name: "Astro",
+        icon: "astro",
       }
     ],
   },
