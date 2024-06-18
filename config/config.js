@@ -70,6 +70,11 @@ export const tools = [
     icon: "sql",
   },
   {
+    url: "https://streamlit.io",
+    name: "Streamlit",
+    icon: "streamlit",
+  },
+  {
     url: "https://vuejs.org",
     name: "Vue",
     icon: "vue",
@@ -124,6 +129,26 @@ export const projectsbyID = {
         url: "https://www.mongodb.com",
         name: "mongoDB",
         icon: "mongodb",
+      },
+      { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
+    ],
+  },
+  streamlit: {
+    name: "Data visualization - Streamlit",
+    link: "https://choropleth-gus-maps.streamlit.app/",
+    href: "/homeprojects/streamlit",
+    descryption:
+      "Welcome to Voivodeship Data Visualizer, an intuitive web application built with Streamlit that brings you comprehensive insights into Poland's voivodeships through dynamic choropleth maps. Powered by data from the Central Statistical Office (GUS), this tool provides a visually engaging way to explore regional statistics. Key features include: Interactive Choropleth Maps: Seamlessly visualize key statistics for each voivodeship with interactive maps that highlight regional differences in various data categories. Up-to-date Data: Access the latest data from GUS, ensuring your insights are based on current and accurate information. User-friendly Interface: Enjoy a clean and responsive design that makes data exploration easy and engaging for users of all backgrounds.Detailed Data Insights: Drill down into specific voivodeships to view detailed statistical data, making it easier to understand regional trends and patterns. Customizable Views: Tailor your data visualization experience with customizable filters and options to focus on the information that matters most to you. Discover the power of data-driven insights with Voivodeship Data Visualizer, where data meets clarity and precision!",
+    tools: [
+      {
+        url: "",
+        name: "Python",
+        icon: "python",
+      },
+      {
+        url: "https://streamlit.io",
+        name: "Streamlit",
+        icon: "streamlit",
       },
       { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
     ],
