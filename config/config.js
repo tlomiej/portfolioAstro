@@ -201,7 +201,7 @@ export const projectsbyID = {
       "Template portfolio with config and tailwind configuration. Simple configuration. In the config.js file, you configure the content of the page: information about yourself, project descriptions, technologies. In the tailwind.config.mjs file, you define your colors.",
     tools: [
       {
-        url: "",
+        url: "https://tlomiejastro.onrender.com/about",
         name: "Astro",
         icon: "astro",
       }
