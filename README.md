@@ -36,6 +36,11 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
+## Todo
+- link button with progress 
+- count visitors
+- 
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
