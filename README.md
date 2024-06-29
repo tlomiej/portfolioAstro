@@ -1,3 +1,4 @@
+
 # Template portfolio: Basics
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 <div align="center">
@@ -39,7 +40,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ## Todo
 - link button with progress 
 - count visitors
-- 
+- add Photo to project. 
 
 ## 🧞 Commands
 
