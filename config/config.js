@@ -20,7 +20,10 @@ export const menuItems = [
     title: "About",
     path: "/about",
   },
-
+  {
+    title: "Now",
+    path: "/now",
+  },
   {
     title: "Contact",
     path: "/contact",
@@ -33,7 +36,9 @@ export const outerProfilLinks = [
     name: "Linkedin",
     icon: "uil:linkedin",
   },
-  { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
+  { url: "https://github.com/tlomiej", 
+   name: "Github", 
+   icon: "uil:github" },
 ];
 
 export const footerText = "Copyright 2024. StarOn";
