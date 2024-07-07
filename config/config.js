@@ -21,10 +21,6 @@ export const menuItems = [
     path: "/about",
   },
   {
-    title: "Now",
-    path: "/now",
-  },
-  {
     title: "Contact",
     path: "/contact",
   },
