@@ -11,7 +11,7 @@ export const menuItems = [
       { title: "BrawlStarAPI", path: "/homeprojects/brawlstarapi" },
       { title: "GeoSeach", path: "/homeprojects/geosearch" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
-      { title: "Google Cloud Platform", path: "/homeprojects/gcp" },
+      { title: "Map with ESRI", path: "/homeprojects/esrimap" },
       { title: "Collector", path: "/homeprojects/collector" },
       { title: "Data visualization - Streamlit", path: "/homeprojects/streamlit" },
     ],
@@ -180,18 +180,28 @@ export const projectsbyID = {
       { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
     ],
   },
-  gcp: {
-    name: "Google Cloud Platform research",
-    link: "",
-    href: "homeprojects/gcp",
+  esrimap: {
+    name: "Map with ESRI",
+    link: "https://esri-app.onrender.com",
+    href: "homeprojects/esrimap",
     descryption:
-      "Intro to GCP",
+      "Map created wid ESRI JS API 4.30",
     tools: [
       {
         url: "",
-        name: "SQL",
-        icon: "sql",
-      }
+        name: "React",
+        icon: "react",
+      },
+      {
+        url: "",
+        name: "JavaScript",
+        icon: "javascript",
+      },
+      {
+        url: "",
+        name: "TypeScript",
+        icon: "typescript",
+      },
     ],
   },
   portfolio: {
