@@ -188,7 +188,7 @@ export const projectsbyID = {
       "Map created wid ESRI JS API 4.30",
     tools: [
       {
-        url: "",
+        url: "https://react.dev",
         name: "React",
         icon: "react",
       },
