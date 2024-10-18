@@ -39,7 +39,7 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ## Todo
 - link button with progress 
-- count visitors
+- ~count visitors~
 - add Photo to project.
 - theme changer
 
