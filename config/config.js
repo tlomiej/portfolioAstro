@@ -3,6 +3,12 @@ export const SEOconfig = {
   decryption: 'Explore the portfolio of Bartłomiej Staroń, a versatile full-stack developer proficient in Python, SQL, JavaScript, TypeScript, and GIS. Discover innovative projects showcasing my expertise in web development, database management, and geographic information systems. Contact me to learn how I can bring your project to life with cutting-edge technologies and comprehensive solutions.',
 }
 
+export const mainInfo = {
+  title: "Welcome to My Portfolio!",
+  desc: "Explore my projects, skills, and experiences in the world of programming."
+
+}
+
 export const menuItems = [
   {
     title: "Home project",

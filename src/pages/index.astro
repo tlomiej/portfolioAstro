@@ -1,18 +1,17 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Sectionhead from "../components/sectionhead.astro";
-import Sectionbody from "../components/sectionbody.astro";
-import Cards from "../components/Cards.astro";
 import { outerProfilLinks } from "../../config/config";
+import Cards from "../components/Cards.astro";
 import LinksIcon from "../components/LinksIcon.astro";
+import Sectionbody from "../components/sectionbody.astro";
+import Sectionhead from "../components/sectionhead.astro";
+import Layout from "../layouts/Layout.astro";
+import { mainInfo } from "./../../config/config";
 ---
 
-<Layout title="Portfolio" >
+<Layout title="Portfolio">
   <Sectionhead>
-    <Fragment slot="title">Welcome to My Portfolio!</Fragment>
-    <Fragment slot="desc"
-      >Explore my projects, skills, and experiences in the world of programming.</Fragment
-    >
+    <Fragment slot="title">{mainInfo.title}</Fragment>
+    <Fragment slot="desc">{mainInfo.desc}</Fragment>
   </Sectionhead>
   <LinksIcon items={outerProfilLinks} />
   <Sectionbody>
