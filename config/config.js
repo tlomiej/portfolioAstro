@@ -37,7 +37,7 @@ export const outerProfilLinks = [
    icon: "uil:github" },
 ];
 
-export const footerText = "Copyright 2024. StarOn";
+export const footerText = "Copyright 2025. Staron";
 export const aboutMe = {
   title: "Developer",
   descryption:
