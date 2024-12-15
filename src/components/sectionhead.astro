@@ -1,5 +1,6 @@
 ---
 const { align = "center" } = Astro.props;
+import "./../styles.css";
 ---
 
 <div class:list={["mt-4", align === "center" && "text-center"]}>
@@ -9,7 +10,7 @@ const { align = "center" } = Astro.props;
   >
     <slot :class="{'text-red': true}" name="title">Title</slot>
   </h1>
-  <p id="sectionHeadSecond" class="text-lg mt-4">
+  <p id="sectionHeadSecond" class="text-lg mt-4 margin-page">
     <slot name="desc" class="text-red">Some description goes here</slot>
   </p>
 </div>
@@ -21,6 +22,4 @@ const { align = "center" } = Astro.props;
   #sectionHeadSecond {
     @apply text-astroSecondTextColor dark:text-astroDarkSecondTextColor dark:bg-astroDarkBackground;
   }
-
-
 </style>
