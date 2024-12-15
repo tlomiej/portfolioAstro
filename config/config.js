@@ -1,13 +1,40 @@
 export const SEOconfig = {
-  title: 'Portfolio of Bartłomiej Staroń | Full-Stack Developer | Python, SQL, GIS, JavaScript, TypeScript, Streamlit',
-  decryption: 'Explore the portfolio of Bartłomiej Staroń, a versatile full-stack developer proficient in Python, SQL, JavaScript, TypeScript, and GIS. Discover innovative projects showcasing my expertise in web development, database management, and geographic information systems. Contact me to learn how I can bring your project to life with cutting-edge technologies and comprehensive solutions.',
-}
+  title:
+    "Portfolio of Bartłomiej Staroń | Full-Stack Developer | Python, SQL, GIS, JavaScript, TypeScript, Streamlit",
+  decryption:
+    "Explore the portfolio of Bartłomiej Staroń, a versatile full-stack developer proficient in Python, SQL, JavaScript, TypeScript, and GIS. Discover innovative projects showcasing my expertise in web development, database management, and geographic information systems. Contact me to learn how I can bring your project to life with cutting-edge technologies and comprehensive solutions.",
+};
 
 export const mainInfo = {
   title: "Welcome to My Portfolio!",
-  desc: "Explore my projects, skills, and experiences in the world of programming."
-
-}
+  desc: "Explore my projects, skills, and experiences in the world of programming.",
+};
+export const mainInfos = [
+  {
+    title: "Welcome to My Portfolio!",
+    desc: "Explore my projects, skills, and experiences in the world of programming.",
+  },
+  {
+    title: "Discover My Journey",
+    desc: "Dive into the story behind my passion for coding and continuous learning.",
+  },
+  {
+    title: "Projects That Make a Difference",
+    desc: "Check out the innovative projects I've built to solve real-world problems.",
+  },
+  {
+    title: "My Skillset at a Glance",
+    desc: "Explore the programming languages, tools, and technologies I specialize in.",
+  },
+  {
+    title: "Collaborate With Me",
+    desc: "Learn how we can work together to bring creative ideas to life.",
+  },
+  {
+    title: "Contact Me Today",
+    desc: "Get in touch to discuss opportunities or share your feedback!",
+  },
+];
 
 export const menuItems = [
   {
@@ -19,7 +46,10 @@ export const menuItems = [
       { title: "Portfolio", path: "/homeprojects/portfolio" },
       { title: "Map with ESRI", path: "/homeprojects/esrimap" },
       { title: "Collector", path: "/homeprojects/collector" },
-      { title: "Data visualization - Streamlit", path: "/homeprojects/streamlit" },
+      {
+        title: "Data visualization - Streamlit",
+        path: "/homeprojects/streamlit",
+      },
     ],
   },
   {
@@ -38,9 +68,7 @@ export const outerProfilLinks = [
     name: "Linkedin",
     icon: "uil:linkedin",
   },
-  { url: "https://github.com/tlomiej", 
-   name: "Github", 
-   icon: "uil:github" },
+  { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
 ];
 
 export const footerText = "Copyright 2025. Staron";
@@ -108,7 +136,7 @@ export const tools = [
     icon: "mongodb",
   },
   { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
-]
+];
 
 export const projectsbyID = {
   brawlstarapi: {
@@ -190,8 +218,7 @@ export const projectsbyID = {
     name: "Map with ESRI",
     link: "https://esri-app.onrender.com",
     href: "homeprojects/esrimap",
-    descryption:
-      "Map created wid ESRI JS API 4.30",
+    descryption: "Map created wid ESRI JS API 4.30",
     tools: [
       {
         url: "https://react.dev",
@@ -221,7 +248,7 @@ export const projectsbyID = {
         url: "https://tlomiejastro.onrender.com/about",
         name: "Astro",
         icon: "astro",
-      }
+      },
     ],
   },
   collector: {
@@ -232,15 +259,15 @@ export const projectsbyID = {
       "Collector Pro is an advanced application designed to simplify and enhance the process of creating custom forms, collecting data, and generating insightful reports. Ideal for businesses, educational institutions, non-profits, and any organization that relies on efficient data collection and analysis, Collector Pro offers a comprehensive suite of tools to meet and exceed your needs. Collector Pro makes data collection straightforward and efficient. Once your forms are created, you can distribute them through various channels",
     tools: [
       {
-          url: "",
-          name: "Python",
-          icon: "python",
-        },
-        {
-          url: "",
-          name: "Flask",
-          icon: "flask",
-        },
+        url: "",
+        name: "Python",
+        icon: "python",
+      },
+      {
+        url: "",
+        name: "Flask",
+        icon: "flask",
+      },
     ],
   },
 };

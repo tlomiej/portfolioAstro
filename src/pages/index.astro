@@ -6,12 +6,22 @@ import Sectionbody from "../components/sectionbody.astro";
 import Sectionhead from "../components/sectionhead.astro";
 import Layout from "../layouts/Layout.astro";
 import { mainInfo } from "./../../config/config";
+import { mainInfos } from "./../../config/config";
+
+const getRandomItem = () => {
+  const randomIndex = Math.floor(Math.random() * mainInfos.length);
+  return mainInfos[randomIndex];
+};
+
+
+const randomItemMainInfo = getRandomItem();
+
 ---
 
 <Layout title="Portfolio">
   <Sectionhead>
-    <Fragment slot="title">{mainInfo.title}</Fragment>
-    <Fragment slot="desc">{mainInfo.desc}</Fragment>
+    <Fragment slot="title">{randomItemMainInfo.title}</Fragment>
+    <Fragment slot="desc">{randomItemMainInfo.desc}</Fragment>
   </Sectionhead>
   <LinksIcon items={outerProfilLinks} />
   <Sectionbody>
