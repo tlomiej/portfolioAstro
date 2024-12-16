@@ -6,7 +6,10 @@ const { align = "center" } = Astro.props;
   <p id="sectionBodyFirst" class="text-lg mt-4">
     <slot name="demo" />
   </p>
-  <p id="sectionBodySecond" class="text-lg mt-4">
+  <p id="sectionBodySecond" class="text-lg mt-4 p-2">
+    <slot name="repoLink" />
+  </p>
+  <p id="sectionBodyThi" class="text-lg mt-4">
     <slot name="links" />
   </p>
 </div>
