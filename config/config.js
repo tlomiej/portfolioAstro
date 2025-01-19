@@ -157,7 +157,7 @@ export const projectsbyID = {
         icon: "express",
       },
       {
-        url: "https://ejs.co/",
+        url: "https://ejs.co",
         name: "EJS",
         icon: "ejs",
       },
