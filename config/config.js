@@ -45,6 +45,7 @@ export const menuItems = [
       { title: "GeoSeach", path: "/homeprojects/geosearch" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
       { title: "Map with ESRI", path: "/homeprojects/esrimap" },
+      { title: "OSMData", path: "/homeprojects/osmdata" },
       { title: "Collector", path: "/homeprojects/collector" },
       {
         title: "Data visualization - Streamlit",
@@ -223,6 +224,30 @@ export const projectsbyID = {
     repoLink: undefined,
     href: "homeprojects/esrimap",
     descryption: "Map created wid ESRI JS API 4.30",
+    tools: [
+      {
+        url: "https://react.dev",
+        name: "React",
+        icon: "react",
+      },
+      {
+        url: "",
+        name: "JavaScript",
+        icon: "javascript",
+      },
+      {
+        url: "",
+        name: "TypeScript",
+        icon: "typescript",
+      },
+    ],
+  },
+  osmdata: {
+    name: "OSMData",
+    link: "https://www.osmdata.online/",
+    repoLink: undefined,
+    href: "homeprojects/osmdata",
+    descryption: "Get data from OpenStreetMap by Overpass API",
     tools: [
       {
         url: "https://react.dev",
