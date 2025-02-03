@@ -42,6 +42,7 @@ Inside of your Astro project, you'll see the following folders and files:
 - ~count visitors~
 - add Photo to project.
 - theme changer
+- implement sleek (https://github.com/slydragonn/alogocode.site)
 
 ## 🧞 Commands
 
