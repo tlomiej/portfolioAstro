@@ -218,7 +218,7 @@ export const projectsbyID = {
     name: "Map with ESRI",
     link: "https://esri-app.onrender.com",
     href: "homeprojects/esrimap",
-    descryption: "Map created wid ESRI JS API 4.30",
+    descryption: "Map created with ESRI JS API 4.30",
     tools: [
       {
         url: "https://react.dev",
