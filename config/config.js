@@ -219,7 +219,7 @@ export const projectsbyID = {
     ],
   },
   esrimap: {
-    name: "Map with ESRI",
+    name: "OSM Search",
     link: "https://esri-app.onrender.com",
     repoLink: undefined,
     href: "homeprojects/esrimap",
