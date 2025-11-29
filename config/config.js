@@ -223,7 +223,17 @@ export const projectsbyID = {
     link: "https://esri-app.onrender.com",
     repoLink: undefined,
     href: "homeprojects/esrimap",
-    descryption: "Map created wid ESRI JS API 4.30",
+    descryption: `OSM data search engine via the Overpass API service. 
+    
+    
+    It offers both attribute and spatial filters for efficient retrieval of the required data.
+    Searches are performed by narrowing down data from available categories. Additionally, results can be restricted to the current map extent, a user-defined spatial range, a drawn area, or a radius around a point.
+
+
+    The list of found features is interactive: you can zoom to any item and inspect its descriptive attributes.
+
+    All retrieved data can be exported to GeoJSON format.
+    Map created wid ESRI JS API 4.30`,
     tools: [
       {
         url: "https://react.dev",
@@ -269,7 +279,7 @@ export const projectsbyID = {
   portfolio: {
     name: "Portfolio",
     link: "https://github.com/tlomiej/portfolioAstro",
-    repoLink: "https://github.com/tlomiej/portfolioAstro", 
+    repoLink: "https://github.com/tlomiej/portfolioAstro",
     href: "homeprojects/portfolio",
     descryption:
       "Template portfolio with config and tailwind configuration. Simple configuration. In the config.js file, you configure the content of the page: information about yourself, project descriptions, technologies. In the tailwind.config.mjs file, you define your colors.",
