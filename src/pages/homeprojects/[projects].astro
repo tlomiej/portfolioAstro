@@ -6,6 +6,7 @@ import { projectsbyID } from "../../../config/config";
 import LinkDemo from "../../components/LinkDemo.astro";
 import Sectionbody from "../../components/sectionbody.astro";
 import LinkRepo from "../../components/LinkRepo.astro";
+import Images from "../../components/Images.astro";
 
 type ProjectName = keyof typeof projectsbyID;
 const { projects } = Astro.params;
@@ -25,7 +26,7 @@ export async function getStaticPaths() {
     <Fragment slot="desc">{descryption}</Fragment>
   </Sectionhead>
   <Sectionbody>
-    
+    <Images slot="images" images={[]} />
     <LinkDemo slot="demo" href={link} />
     <LinkRepo slot="repoLink" href={repoLink} />
     <LinksIcon slot="links" items={tools} name={name} />
