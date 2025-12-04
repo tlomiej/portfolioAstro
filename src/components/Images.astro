@@ -1,18 +1,24 @@
 ---
 const { images } = Astro.props;
+const imageCount = images?.length || 0;
 ---
 
 <div class="w-full">
   {
     images && images.length > 0 ? (
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8">
+      <div class:list={[
+        "my-8 gap-4",
+        imageCount === 1 ? "flex justify-center" : "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+      ]}>
         {images.map((image: string) => (
-          <div class="w-full h-auto">
+          <div class:list={[
+            "h-auto",
+            imageCount === 1 ? "max-w-3xl" : "w-full"
+          ]}>
             <img
               src={image}
               alt="Project screenshot"
               class="w-full h-auto object-cover rounded-lg shadow-md"
-              onerror="this.onerror=null; this.src='https://placehold.co/800x600?text=Image+Not+Found'; this.classList.add('opacity-50');"
             />
           </div>
         ))}
