@@ -147,6 +147,7 @@ export const projectsbyID = {
     href: "/homeprojects/brawlstarapi",
     link: "https://learn-nodejs-r8oc.onrender.com",
     repoLink: undefined,
+    images: [],
     tools: [
       {
         url: "https://nodejs.org",
@@ -175,6 +176,7 @@ export const projectsbyID = {
     name: "Data visualization - Streamlit",
     link: "https://choropleth-gus-maps.streamlit.app/",
     repoLink: undefined,
+    images: [],
     href: "/homeprojects/streamlit",
     descryption:
       "Welcome to Voivodeship Data Visualizer, an intuitive web application built with Streamlit that brings you comprehensive insights into Poland's voivodeships through dynamic choropleth maps. Powered by data from the Central Statistical Office (GUS), this tool provides a visually engaging way to explore regional statistics. Key features include: Interactive Choropleth Maps: Seamlessly visualize key statistics for each voivodeship with interactive maps that highlight regional differences in various data categories. Up-to-date Data: Access the latest data from GUS, ensuring your insights are based on current and accurate information. User-friendly Interface: Enjoy a clean and responsive design that makes data exploration easy and engaging for users of all backgrounds.Detailed Data Insights: Drill down into specific voivodeships to view detailed statistical data, making it easier to understand regional trends and patterns. Customizable Views: Tailor your data visualization experience with customizable filters and options to focus on the information that matters most to you. Discover the power of data-driven insights with Voivodeship Data Visualizer, where data meets clarity and precision!",
@@ -196,6 +198,7 @@ export const projectsbyID = {
     name: "GeoSearch",
     link: "https://geoapp-8zbw.onrender.com",
     repoLink: undefined,
+    images: [],
     href: "/homeprojects/geosearch",
     descryption:
       "This product facilitates searching for locations based on their name and space. Users can apply specific filters to refine their search results. It automatically logs the search history, allowing users to revisit previous searches.Its interface is designed to be intuitive, providing users with a seamless experience.",
@@ -222,18 +225,9 @@ export const projectsbyID = {
     name: "OSM Search",
     link: "https://esri-app.onrender.com",
     repoLink: undefined,
+    images: [],
     href: "homeprojects/esrimap",
-    descryption: `OSM data search engine via the Overpass API service. 
-    
-    
-    It offers both attribute and spatial filters for efficient retrieval of the required data.
-    Searches are performed by narrowing down data from available categories. Additionally, results can be restricted to the current map extent, a user-defined spatial range, a drawn area, or a radius around a point.
-
-
-    The list of found features is interactive: you can zoom to any item and inspect its descriptive attributes.
-
-    All retrieved data can be exported to GeoJSON format.
-    Map created wid ESRI JS API 4.30`,
+    descryption: ``,
     tools: [
       {
         url: "https://react.dev",
@@ -257,7 +251,18 @@ export const projectsbyID = {
     link: "https://www.osmdata.online/",
     repoLink: undefined,
     href: "homeprojects/osmdata",
-    descryption: "Get data from OpenStreetMap by Overpass API",
+    descryption: `OSM data search engine via the Overpass API service. 
+    
+    
+    It offers both attribute and spatial filters for efficient retrieval of the required data.
+    Searches are performed by narrowing down data from available categories. Additionally, results can be restricted to the current map extent, a user-defined spatial range, a drawn area, or a radius around a point.
+
+
+    The list of found features is interactive: you can zoom to any item and inspect its descriptive attributes.
+
+    All retrieved data can be exported to GeoJSON format.
+    Map created wid ESRI JS API 4.30`,
+    images: ["/projects/osmdata/OSMSearch1.jpg"],
     tools: [
       {
         url: "https://react.dev",
@@ -281,6 +286,7 @@ export const projectsbyID = {
     link: "https://github.com/tlomiej/portfolioAstro",
     repoLink: "https://github.com/tlomiej/portfolioAstro",
     href: "homeprojects/portfolio",
+    images: [],
     descryption:
       "Template portfolio with config and tailwind configuration. Simple configuration. In the config.js file, you configure the content of the page: information about yourself, project descriptions, technologies. In the tailwind.config.mjs file, you define your colors.",
     tools: [
