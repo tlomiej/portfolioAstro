@@ -174,10 +174,10 @@ export const projectsbyID = {
   },
   streamlit: {
     name: "Data visualization - Streamlit",
+    href: "/homeprojects/streamlit",
     link: "https://choropleth-gus-maps.streamlit.app/",
     repoLink: undefined,
     images: [],
-    href: "/homeprojects/streamlit",
     descryption:
       "Welcome to Voivodeship Data Visualizer, an intuitive web application built with Streamlit that brings you comprehensive insights into Poland's voivodeships through dynamic choropleth maps. Powered by data from the Central Statistical Office (GUS), this tool provides a visually engaging way to explore regional statistics. Key features include: Interactive Choropleth Maps: Seamlessly visualize key statistics for each voivodeship with interactive maps that highlight regional differences in various data categories. Up-to-date Data: Access the latest data from GUS, ensuring your insights are based on current and accurate information. User-friendly Interface: Enjoy a clean and responsive design that makes data exploration easy and engaging for users of all backgrounds.Detailed Data Insights: Drill down into specific voivodeships to view detailed statistical data, making it easier to understand regional trends and patterns. Customizable Views: Tailor your data visualization experience with customizable filters and options to focus on the information that matters most to you. Discover the power of data-driven insights with Voivodeship Data Visualizer, where data meets clarity and precision!",
     tools: [
@@ -196,10 +196,10 @@ export const projectsbyID = {
   },
   geosearch: {
     name: "GeoSearch",
+    href: "/homeprojects/geosearch",
     link: "https://geoapp-8zbw.onrender.com",
     repoLink: undefined,
     images: [],
-    href: "/homeprojects/geosearch",
     descryption:
       "This product facilitates searching for locations based on their name and space. Users can apply specific filters to refine their search results. It automatically logs the search history, allowing users to revisit previous searches.Its interface is designed to be intuitive, providing users with a seamless experience.",
     tools: [
@@ -223,11 +223,11 @@ export const projectsbyID = {
   },
   esrimap: {
     name: "OSM Search",
+    href: "homeprojects/esrimap",
     link: "https://esri-app.onrender.com",
     repoLink: undefined,
     images: [],
-    href: "homeprojects/esrimap",
-    descryption: ``,
+    descryption: `OSM Search - Interactive map application for searching OpenStreetMap data with ESRI JS API.`,
     tools: [
       {
         url: "https://react.dev",
@@ -248,9 +248,10 @@ export const projectsbyID = {
   },
   osmdata: {
     name: "OSMData",
+    href: "homeprojects/osmdata",
     link: "https://www.osmdata.online/",
     repoLink: undefined,
-    href: "homeprojects/osmdata",
+    images: ["/projects/osmdata/OSMSearch1.jpg"],
     descryption: `OSM data search engine via the Overpass API service. 
     
     
@@ -262,8 +263,6 @@ export const projectsbyID = {
 
     All retrieved data can be exported to GeoJSON format.
     Map created wid ESRI JS API 4.30`,
-
-    images: ["/projects/osmdata/OSMSearch1.jpg"],
     tools: [
       {
         url: "https://react.dev",
@@ -284,9 +283,9 @@ export const projectsbyID = {
   },
   portfolio: {
     name: "Portfolio",
+    href: "homeprojects/portfolio",
     link: "https://github.com/tlomiej/portfolioAstro",
     repoLink: "https://github.com/tlomiej/portfolioAstro",
-    href: "homeprojects/portfolio",
     images: [],
     descryption:
       "Template portfolio with config and tailwind configuration. Simple configuration. In the config.js file, you configure the content of the page: information about yourself, project descriptions, technologies. In the tailwind.config.mjs file, you define your colors.",
