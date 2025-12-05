@@ -262,6 +262,7 @@ export const projectsbyID = {
 
     All retrieved data can be exported to GeoJSON format.
     Map created wid ESRI JS API 4.30`,
+    
     images: ["/projects/osmdata/OSMSearch1.jpg"],
     tools: [
       {
