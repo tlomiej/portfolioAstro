@@ -262,7 +262,7 @@ export const projectsbyID = {
 
     All retrieved data can be exported to GeoJSON format.
     Map created wid ESRI JS API 4.30`,
-    
+
     images: ["/projects/osmdata/OSMSearch1.jpg"],
     tools: [
       {
@@ -303,6 +303,7 @@ export const projectsbyID = {
     link: "https://collect.pythonanywhere.com",
     repoLink: undefined,
     href: "/homeprojects/collector",
+    images: [],
     descryption:
       "Collector Pro is an advanced application designed to simplify and enhance the process of creating custom forms, collecting data, and generating insightful reports. Ideal for businesses, educational institutions, non-profits, and any organization that relies on efficient data collection and analysis, Collector Pro offers a comprehensive suite of tools to meet and exceed your needs. Collector Pro makes data collection straightforward and efficient. Once your forms are created, you can distribute them through various channels",
     tools: [
