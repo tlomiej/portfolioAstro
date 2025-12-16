@@ -13,7 +13,7 @@ const items = Object.keys(projectsbyID);
       return (
         <Card
           title={p.name}
-          body={p.descryption.substring(0, 95) + "..."}
+          body={p.description.substring(0, 95) + "..."}
           href={p.href}
         />
       );

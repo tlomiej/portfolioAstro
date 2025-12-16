@@ -11,7 +11,7 @@ import Images from "../../components/Images.astro";
 type ProjectName = keyof typeof projectsbyID;
 const { projects } = Astro.params;
 const project = projectsbyID[projects as ProjectName];
-const { tools, name, descryption, link, repoLink, images = [] } = project;
+const { tools, name, description, link, repoLink, images = [] } = project;
 
 export async function getStaticPaths() {
   return Object.keys(projectsbyID).map((name) => {
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 <Layout title={name}>
   <Sectionhead>
     <Fragment slot="title">{name}</Fragment>
-    <Fragment slot="desc">{descryption}</Fragment>
+    <Fragment slot="desc">{description}</Fragment>
   </Sectionhead>
   <Sectionbody>
     <Images slot="images" images={images} />
