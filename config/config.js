@@ -161,7 +161,7 @@ export const projectsbyID = {
         icon: "express",
       },
       {
-        url: "https://ejs.co/",
+        url: "https://ejs.co",
         name: "EJS",
         icon: "ejs",
       },
@@ -225,45 +225,7 @@ export const projectsbyID = {
   esrimap: {
     name: "OSM Search",
     href: "homeprojects/esrimap",
-    link: "https://esri-app.onrender.com",
-    repoLink: undefined,
-    images: [],
-    description: `OSM Search - Interactive map application for searching OpenStreetMap data with ESRI JS API.`,
-    tools: [
-      {
-        url: "https://react.dev",
-        name: "React",
-        icon: "react",
-      },
-      {
-        url: "",
-        name: "JavaScript",
-        icon: "javascript",
-      },
-      {
-        url: "",
-        name: "TypeScript",
-        icon: "typescript",
-      },
-    ],
-  },
-  osmdata: {
-    name: "OSMData",
-    href: "homeprojects/osmdata",
-    link: "https://www.osmdata.online/",
-    repoLink: undefined,
-    images: ["/projects/osmdata/OSMSearch1.jpg"],
-    description: `OSM data search engine via the Overpass API service. 
-    
-    
-    It offers both attribute and spatial filters for efficient retrieval of the required data.
-    Searches are performed by narrowing down data from available categories. Additionally, results can be restricted to the current map extent, a user-defined spatial range, a drawn area, or a radius around a point.
-
-
-    The list of found features is interactive: you can zoom to any item and inspect its descriptive attributes.
-
-    All retrieved data can be exported to GeoJSON format.
-    Map created wid ESRI JS API 4.30`,
+    descryption: "Map created with ESRI JS API 4.30",
     tools: [
       {
         url: "https://react.dev",

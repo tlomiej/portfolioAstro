@@ -11,7 +11,6 @@ export default function LinkComponent(props: { name?: string }) {
     >
       Hello z react Compoennt, {count}
       <h1>{props.name}</h1>
-
     </h1>
   );
 }
