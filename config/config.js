@@ -42,7 +42,8 @@ export const menuItems = [
     path: "#",
     children: [
       { title: "BrawlStarAPI", path: "/homeprojects/brawlstarapi" },
-      { title: "GeoSeach", path: "/homeprojects/geosearch" },
+      { title: "GeoSearch", path: "/homeprojects/geosearch" },
+      { title: "VSCodeGisExtension", path: "/homeprojects/vscodegisextension" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
       { title: "Map with ESRI", path: "/homeprojects/esrimap" },
       { title: "OSMData", path: "/homeprojects/osmdata" },
@@ -269,6 +270,26 @@ export const projectsbyID = {
         name: "React",
         icon: "react",
       },
+      {
+        url: "",
+        name: "JavaScript",
+        icon: "javascript",
+      },
+      {
+        url: "",
+        name: "TypeScript",
+        icon: "typescript",
+      },
+    ],
+  },
+  vscodegisextension: {
+    name: "VSCode GIS Extension",
+    href: "homeprojects/vscodegisextension",
+    link: "https://marketplace.visualstudio.com/items?itemName=BartlomiejStaron.gisextension#review-details",
+    repoLink: undefined,
+    images: [],
+    description: `VSCode GIS Extension is a powerful tool designed to enhance the capabilities of Visual Studio Code for Geographic Information System (GIS) professionals and enthusiasts. This extension seamlessly integrates GIS functionalities into the VSCode environment, allowing users to efficiently manage, analyze, and visualize geospatial data without leaving their code editor.`,
+    tools: [
       {
         url: "",
         name: "JavaScript",
