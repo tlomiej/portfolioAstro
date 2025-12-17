@@ -40,7 +40,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ## Todo
 - link button with progress 
 - ~count visitors~
-- add Photo to project.
+- ~add Photo to project.~
 - theme changer
 - implement sleek (https://github.com/slydragonn/alogocode.site)
 
