@@ -225,7 +225,10 @@ export const projectsbyID = {
   esrimap: {
     name: "OSM Search",
     href: "homeprojects/esrimap",
-    descryption: "Map created with ESRI JS API 4.30",
+    link: "https://esri-app.onrender.com",
+    repoLink: undefined,
+    images: [],
+    description: "Map created with ESRI JS API 4.30",
     tools: [
       {
         url: "https://react.dev",
