@@ -12,7 +12,7 @@ const { href, title, body } = Astro.props;
   class="bg-astroMainColor rounded-lg shadow-inner border border-gray-200 p-5 hover:bg-astroSecondColor text-astroMainTextColor dark:text-astroDarkBackground dark:bg-astroDarkMainColor"
 >
   <a href={href}>
-    <h2>
+    <h2 title={title}>
       {title}
       <span>&rarr;</span>
     </h2>
@@ -36,15 +36,19 @@ const { href, title, body } = Astro.props;
     padding: calc(1.5rem - 1px);
     border-radius: 8px;
     color: black;
-    background-color: red;
     opacity: 0.8;
   }
 
   h2 {
     margin: 0;
     font-size: 1.25rem;
-    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: all 0.1s ease;
   }
+
+  h2:hover {
+    font-weight: bold;
+  }
+
   p {
     margin-top: 0.5rem;
     margin-bottom: 0;

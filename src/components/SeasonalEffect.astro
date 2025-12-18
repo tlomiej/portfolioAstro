@@ -1,0 +1,46 @@
+---
+import { seasonalEffects } from "../../config/config.js";
+
+const now = new Date();
+const month = now.getMonth() + 1;
+const day = now.getDate();
+
+const isInPeriod = (
+  startMonth: number,
+  startDay: number,
+  endMonth: number,
+  endDay: number
+) => {
+  if (startMonth === endMonth) {
+    return month === startMonth && day >= startDay && day <= endDay;
+  }
+
+  if (startMonth > endMonth) {
+    return (
+      (month === startMonth && day >= startDay) ||
+      (month === endMonth && day <= endDay) ||
+      month > startMonth ||
+      month < endMonth
+    );
+  }
+
+  return (
+    (month === startMonth && day >= startDay) ||
+    (month === endMonth && day <= endDay) ||
+    (month > startMonth && month < endMonth)
+  );
+};
+
+const shouldDisplay =
+  seasonalEffects.enabled &&
+  seasonalEffects.displayPeriods.some((period: any) =>
+    isInPeriod(
+      period.startMonth,
+      period.startDay,
+      period.endMonth,
+      period.endDay
+    )
+  );
+---
+
+{shouldDisplay && <slot />}
