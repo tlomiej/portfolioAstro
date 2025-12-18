@@ -76,6 +76,14 @@ export const outerProfilLinks = [
 ];
 
 export const footerText = "Copyright 2025. Staron";
+
+export const seasonalEffects = {
+  enabled: true,
+  displayPeriods: [
+    { startMonth: 12, startDay: 24, endMonth: 12, endDay: 26 },
+    { startMonth: 1, startDay: 1, endMonth: 1, endDay: 6 }  ]
+};
+
 export const aboutMe = {
   title: "Developer",
   description:
