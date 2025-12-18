@@ -2,10 +2,11 @@
 import { outerProfilLinks } from "../../config/config";
 import Cards from "../components/Cards.astro";
 import LinksIcon from "../components/LinksIcon.astro";
+import SeasonalEffect from "../components/SeasonalEffect.astro";
 import Sectionbody from "../components/sectionbody.astro";
 import Sectionhead from "../components/sectionhead.astro";
+import SnowEffect from '../components/SnowEffect.astro';
 import Layout from "../layouts/Layout.astro";
-import { mainInfo } from "./../../config/config";
 import { mainInfos } from "./../../config/config";
 
 const getRandomItem = () => {
@@ -17,6 +18,10 @@ const getRandomItem = () => {
 const randomItemMainInfo = getRandomItem();
 
 ---
+
+<SeasonalEffect>
+  <SnowEffect />
+</SeasonalEffect>
 
 <Layout title="Portfolio">
   <Sectionhead>
