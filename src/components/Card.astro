@@ -9,7 +9,7 @@ const { href, title, body } = Astro.props;
 ---
 
 <div
-  class="bg-astroMainColor rounded-lg shadow-inner border border-gray-200 p-5 hover:bg-astroSecondColor text-astroMainTextColor dark:text-astroDarkBackground dark:bg-astroDarkMainColor"
+  class="card-wrapper bg-astroMainColor rounded-lg shadow-inner border-2 border-gray-200 p-5 hover:bg-astroSecondColor text-astroMainTextColor dark:text-astroDarkBackground dark:bg-astroDarkMainColor"
 >
   <a href={href}>
     <h2 title={title}>
@@ -22,6 +22,15 @@ const { href, title, body } = Astro.props;
   </a>
 </div>
 <style>
+  .card-wrapper {
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+  }
+
+  .card-wrapper:hover {
+    box-shadow: inset 0 0 0 5px theme('colors.astroSecondColor');
+  }
+
   .link-card {
     display: flex;
     border-radius: 7px;
@@ -42,16 +51,17 @@ const { href, title, body } = Astro.props;
   h2 {
     margin: 0;
     font-size: 1.25rem;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
   }
 
-  h2:hover {
+  .card-wrapper:hover h2 {
     font-weight: bold;
   }
 
   p {
     margin-top: 0.5rem;
     margin-bottom: 0;
+    transition: color 0.3s ease;
   }
   /* .link-card:is(:hover, :focus-within) {
 		background-position: 0;
