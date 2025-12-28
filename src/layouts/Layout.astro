@@ -13,8 +13,6 @@ interface Props {
 }
 
 const {
-  title,
-  //description = "sample description",
   image = "/logoNode.svg",
 } = Astro.props;
 ---
@@ -24,12 +22,15 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <GoogleAnalytics />
-    <SEO title={SEOconfig.title} description={SEOconfig.decryption} />
     <meta property="og:image" content={image} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <GoogleAnalytics />
+    <SEO 
+      title={SEOconfig.title} 
+      description={SEOconfig.decryption}
+      charset="UTF-8"
+    />
     <ViewTransitions />
   </head>
   <body class="min-h-screen grid grid-rows-[auto,1fr,auto] bg-astroBackground dark:bg-astroDarkBackground">
