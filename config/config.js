@@ -1,6 +1,6 @@
-export const SEOconfig = {
+﻿export const SEOconfig = {
   title:
-    "Portfolio of Bartłomiej Staroń | Full-Stack Developer | Python, SQL, GIS, JavaScript, TypeScript, Streamlit",
+    "Bartłomiej Staroń | Full-Stack Developer | Python, SQL, GIS, JavaScript, TypeScript, Streamlit",
   decryption:
     "Explore the portfolio of Bartłomiej Staroń, a versatile full-stack developer proficient in Python, SQL, JavaScript, TypeScript, and GIS. Discover innovative projects showcasing my expertise in web development, database management, and geographic information systems. Contact me to learn how I can bring your project to life with cutting-edge technologies and comprehensive solutions.",
 };
