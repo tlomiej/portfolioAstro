@@ -1,11 +1,14 @@
-﻿export const SEOconfig = {
+﻿// DEMO CONFIG FILE FOR PORTFOLIO TEMPLATE
+// REPLACE THE CONTENT WITH YOUR OWN INFORMATION
+
+export const SEOconfig = {
   title:
-    "Bartłomiej Staroń | Full-Stack Developer | Python, SQL, GIS, JavaScript, TypeScript, Streamlit",
+    "Portfolio of Alex Johnson | Full-Stack Developer | React, Node.js, TypeScript, Python - DEMO",
   decryption:
-    "Explore the portfolio of Bartłomiej Staroń, a versatile full-stack developer proficient in Python, SQL, JavaScript, TypeScript, and GIS. Discover innovative projects showcasing my expertise in web development, database management, and geographic information systems. Contact me to learn how I can bring your project to life with cutting-edge technologies and comprehensive solutions.",
+    "Explore the portfolio of Alex Johnson, a passionate full-stack developer proficient in React, Node.js, TypeScript, and Python. This is a demo portfolio template showcasing various web development projects and skills. Discover innovative solutions and modern web technologies in action.",
 };
 
-export const googleAnalyticsId = "G-MEZNNZ03E5";
+export const googleAnalyticsId = ""; // Add your Google Analytics ID here
 
 export const mainInfo = {
   title: "Welcome to My Portfolio!",
@@ -68,19 +71,19 @@ export const menuItems = [
 
 export const outerProfilLinks = [
   {
-    url: "https://www.linkedin.com/in/bart%C5%82omiej-staro%C5%84",
+    url: "https://www.linkedin.com/in/demo-user",
     name: "Linkedin",
     icon: "uil:linkedin",
   },
-  { url: "https://github.com/tlomiej", name: "Github", icon: "uil:github" },
+  { url: "https://github.com/demo-user", name: "Github", icon: "uil:github" },
 ];
 
-export const footerText = "Copyright 2025. Staron";
+export const footerText = "Copyright 2025. Demo Portfolio Template";
 
 export const seasonalEffects = {
   enabled: true,
   displayPeriods: [
-    { startMonth: 12, startDay: 24, endMonth: 12, endDay: 31 },
+    { startMonth: 12, startDay: 24, endMonth: 12, endDay: 26 },
     { startMonth: 1, startDay: 1, endMonth: 1, endDay: 6 }  ]
 };
 
@@ -91,9 +94,9 @@ export const aboutMe = {
 };
 
 export const contactMe = {
-  mail: "bartekstaron@gmail.com",
-  place: "Lublin (51°15′00″N' 22°34′00″E)",
-  MAIL_API_KEY: "ce090992-67c7-4408-a249-f293bfd6deb5",
+  mail: "demo@example.com",
+  place: "San Francisco, CA (37°46′30″N 122°24′56″W)",
+  MAIL_API_KEY: "", // Add your Web3Forms API key here: https://web3forms.com
 };
 
 export const tools = [
