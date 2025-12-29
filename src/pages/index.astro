@@ -19,10 +19,6 @@ const randomItemMainInfo = getRandomItem();
 
 ---
 
-<SeasonalEffect>
-  <SnowEffect />
-</SeasonalEffect>
-
 <Layout title="Portfolio">
   <Sectionhead>
     <Fragment slot="title">{randomItemMainInfo.title}</Fragment>
@@ -33,6 +29,10 @@ const randomItemMainInfo = getRandomItem();
     <Cards slot="links" />
   </Sectionbody>
 </Layout>
+
+<SeasonalEffect>
+  <SnowEffect />
+</SeasonalEffect>
 
 <style is:global>
   :root {
