@@ -237,7 +237,7 @@ export const projectsbyID = {
     href: "homeprojects/esrimap",
     link: "https://esri-app.onrender.com",
     repoLink: undefined,
-    images: [],
+    images: ['/projects/esrimap/OSMSearch1.jpg'],
     description: "Map created with ESRI JS API 4.30",
     tools: [
       {
