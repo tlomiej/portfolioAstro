@@ -210,7 +210,7 @@ export const projectsbyID = {
     href: "/homeprojects/geosearch",
     link: "https://geoapp-8zbw.onrender.com",
     repoLink: undefined,
-    images: [],
+    images: ["/projects/geosearch/mainGeoSearch.jpg"],
     description:
       "This product facilitates searching for locations based on their name and space. Users can apply specific filters to refine their search results. It automatically logs the search history, allowing users to revisit previous searches.Its interface is designed to be intuitive, providing users with a seamless experience.",
     tools: [
