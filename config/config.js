@@ -272,6 +272,11 @@ export const projectsbyID = {
         name: "JavaScript",
         icon: "javascript",
       },
+      {
+        url: "",
+        name: "Antigravity",
+        icon: "antigravity",
+      },
     ],
   },
   vscodegisextension: {
