@@ -48,6 +48,7 @@ export const menuItems = [
       { title: "VSCodeGisExtension", path: "/homeprojects/vscodegisextension" },
       { title: "Portfolio", path: "/homeprojects/portfolio" },
       { title: "Map with ESRI", path: "/homeprojects/esrimap" },
+      { title: "Mapa- antigravity", path: "/homeprojects/mapaantigravity" },
       { title: "OSMData", path: "/homeprojects/osmdata" },
       { title: "Collector", path: "/homeprojects/collector" },
       {
@@ -254,6 +255,22 @@ export const projectsbyID = {
         url: "",
         name: "TypeScript",
         icon: "typescript",
+      },
+    ],
+  },
+  mapaantigravity: {
+    name: "Mapa- antigravity",
+    href: "/homeprojects/mapaantigravity",
+    link: "https://map-app-hg17.onrender.com/",
+    repoLink: undefined,
+    images: [],
+    description:
+      "Mapa- antigravity is an interactive map application hosted on Render. Explore geospatial data with a modern interface and intuitive navigation.",
+    tools: [
+      {
+        url: "",
+        name: "JavaScript",
+        icon: "javascript",
       },
     ],
   },
