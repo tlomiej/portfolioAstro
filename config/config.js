@@ -43,6 +43,7 @@ export const menuItems = [
     title: "Home project",
     path: "#",
     children: [
+      { title: "Overpass api plugin for Geolibre", path: "/homeprojects/overpassapi" },
       { title: "BrawlStarAPI", path: "/homeprojects/brawlstarapi" },
       { title: "GeoSearch", path: "/homeprojects/geosearch" },
       { title: "VSCodeGisExtension", path: "/homeprojects/vscodegisextension" },
@@ -276,6 +277,22 @@ export const projectsbyID = {
         url: "",
         name: "Antigravity",
         icon: "antigravity",
+      },
+    ],
+  },
+  overpassapi: {
+    name: "Overpass API Plugin for Geolibre",
+    href: "/homeprojects/overpassapi",
+    link: "https://web.geolibre.app",
+    repoLink: "https://github.com/tlomiej/geolibre_overpass_plugin",
+    images: [],
+    description:
+      "A GeoLibre plugin for querying OpenStreetMap data via Overpass API. It allows users to retrieve and visualize geospatial data from OpenStreetMap, enabling advanced mapping and analysis capabilities within the GeoLibre platform.",
+    tools: [
+      {
+        url: "",
+        name: "JavaScript",
+        icon: "javascript",
       },
     ],
   },
